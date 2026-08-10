@@ -9,9 +9,7 @@ import streamlit as st
 # ---------------------------------------------------------
 NAVER_CLIENT_ID = "YOUR_NAVER_CLIENT_ID"
 NAVER_CLIENT_SECRET = "YOUR_NAVER_CLIENT_SECRET"
-GEMINI_API_KEY = (
-    "AQ.Ab8RN6JKgb39wkZ8SeLEDY4vFqNSP92zxJPUp1lL-hFWbR2jKw"  # 제공받은 키 적용
-)
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 # Gemini AI 클라이언트 초기화
 try:
